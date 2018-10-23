@@ -52,7 +52,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlurController.cs" />
-     <Compile Include="Assets\Scripts\faucet_controller.cs" />
+     <Compile Include="Assets\Scripts\dragObject.cs" />
+     <Compile Include="Assets\Scripts\object_controller.cs" />
      <None Include="Assets\Shader\BlurEffect.shader" />
      <None Include="Assets\Shader\UnlitTransparent.shader" />
  <Reference Include="UnityEngine.CoreModule">
