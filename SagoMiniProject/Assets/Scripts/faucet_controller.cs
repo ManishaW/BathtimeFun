@@ -6,6 +6,8 @@ public class faucet_controller : MonoBehaviour {
 	public Transform prefab;
 	private IEnumerator coroutine;
 	// Use this for initialization
+	double waitTime = 0.5f;
+	double charge = 0.0;
 	void Start () {
 
 	}
@@ -26,7 +28,6 @@ public class faucet_controller : MonoBehaviour {
 					if (hit.transform.tag == "faucet") {
 						Instantiate (prefab, new Vector3 (15f, 12f, 0), Quaternion.identity);
 
-
 					}
 
 				}
@@ -34,6 +35,7 @@ public class faucet_controller : MonoBehaviour {
 		} else {
 			Debug.Log ("not held down");
 		}
+	
 	}
 
 }
