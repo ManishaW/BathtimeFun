@@ -14,6 +14,7 @@ public class Destroy : MonoBehaviour {
 		
 	}
 	void OnBecameInvisible() {
+		//destroy the object if it goes outside the camera view
 		Destroy(this.gameObject);
 		Debug.Log (this.gameObject.name);
 	}

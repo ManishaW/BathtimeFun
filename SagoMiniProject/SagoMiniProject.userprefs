@@ -1,13 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Temp\GeneratedFromSurface-Custom-NewSurfaceShader.shader">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ClickController.cs">
     <Files>
-      <File FileName="Assets\Scripts\ClickController.cs" Line="30" Column="48" />
-      <File FileName="Assets\Scripts\DragObject.cs" Line="21" Column="1" />
-      <File FileName="Assets\Scripts\WaterBlur.cs" Line="1" Column="1" />
-      <File FileName="Assets\Shader\WaterBlurEffect.shader" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Destroy.cs" Line="18" Column="36" />
-      <File FileName="Temp\GeneratedFromSurface-Custom-NewSurfaceShader.shader" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Effects\ImageEffects\Scripts\Blur.cs" Line="7" Column="50" />
+      <File FileName="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlurEffectConeTaps.shader" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ClickController.cs" Line="37" Column="35" />
+      <File FileName="Assets\Scripts\DragObject.cs" Line="20" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
