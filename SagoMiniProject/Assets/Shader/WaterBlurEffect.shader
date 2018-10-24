@@ -1,6 +1,7 @@
-// Unity based gaussian blue shader
+// Unity based gaussian blur shader
 
 Shader "WaterBlurEffect" {
+
 	Properties { _MainTex ("", any) = "" {} }
 	CGINCLUDE
 	#include "UnityCG.cginc"

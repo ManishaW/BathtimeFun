@@ -8,6 +8,7 @@ public class ClickController : MonoBehaviour {
 	// Use this for initialization
 	double waitTime = 0.5f;
 	double charge = 0.0;
+	bool playWaves = false;
 	void Start () {
 		
 
@@ -24,17 +25,20 @@ public class ClickController : MonoBehaviour {
 			if (Physics.Raycast (ray, out hit, 100.0f)) {
 
 				if (hit.transform != null) {
-					Debug.Log (hit.transform.gameObject);
 
 					if (hit.transform.tag == "faucet") {
 						Instantiate (prefab, new Vector3 (15f, 15f, 0), Quaternion.identity);
+//						Instantiate (prefab, new Vector3 (15f, 15f, 0), Quaternion.identity);
 						hit.transform.Rotate (new Vector3 (0, 0, -200) * Time.deltaTime);
-						hit.transform.gameObject.GetComponents<AudioSource>()[0].Play ();
+						if (!playWaves) {
+							hit.transform.gameObject.GetComponents<AudioSource> () [0].Play ();
+							playWaves = true;
+						}
 //						Debug.Log(hit.transform.gameObject.GetComponents<AudioSource>().Length);
 
 					}
 					if (hit.transform.tag == "drainer") {
-						Debug.Log ("yikes");
+						Debug.Log ("drain water!");
 						hit.transform.gameObject.GetComponents<AudioSource>()[0].Play ();
 						hit.transform.gameObject.GetComponents<Animation> ()[0].Play();
 					}

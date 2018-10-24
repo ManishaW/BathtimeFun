@@ -55,8 +55,9 @@
      <Compile Include="Assets\Scripts\Destroy.cs" />
      <Compile Include="Assets\Scripts\DragObject.cs" />
      <Compile Include="Assets\Scripts\WaterBlur.cs" />
-     <Compile Include="Assets\waterOverflowDetection.cs" />
      <None Include="Assets\Shader\WaterBlurEffect.shader" />
+     <None Include="Assets\README.txt" />
+     <None Include="Assets\Shader\NewImageEffectShader.shader" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>
