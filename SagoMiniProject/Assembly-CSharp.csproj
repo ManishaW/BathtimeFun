@@ -51,11 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BlurController.cs" />
-     <Compile Include="Assets\Scripts\dragObject.cs" />
-     <Compile Include="Assets\Scripts\object_controller.cs" />
-     <None Include="Assets\Shader\BlurEffect.shader" />
-     <None Include="Assets\Shader\UnlitTransparent.shader" />
+     <Compile Include="Assets\Scripts\ClickController.cs" />
+     <Compile Include="Assets\Scripts\Destroy.cs" />
+     <Compile Include="Assets\Scripts\DragObject.cs" />
+     <Compile Include="Assets\Scripts\WaterBlur.cs" />
+     <Compile Include="Assets\waterOverflowDetection.cs" />
+     <None Include="Assets\Shader\WaterBlurEffect.shader" />
  <Reference Include="UnityEngine.CoreModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
  </Reference>

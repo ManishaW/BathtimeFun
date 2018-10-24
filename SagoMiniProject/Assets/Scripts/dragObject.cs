@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class dragObject : MonoBehaviour {
+public class DragObject : MonoBehaviour {
 	Vector3 dist;
 	float posX;
 	float posY;
@@ -11,7 +11,7 @@ public class dragObject : MonoBehaviour {
 		dist = Camera.main.WorldToScreenPoint(transform.position);
 		posX = Input.mousePosition.x - dist.x;
 		posY = Input.mousePosition.y - dist.y;
-		Debug.Log ("oiii");
+		Debug.Log ("clicked");
 		GetComponent<AudioSource>().Play ();
 	}
 
@@ -22,6 +22,11 @@ public class dragObject : MonoBehaviour {
 
 		Vector3 worldPos = Camera.main.ScreenToWorldPoint(curPos);
 		transform.position = worldPos;
+
+		Vector3 v = Input.mousePosition- dist;// subtract startvec from current finger position
+		if(v.x < 0) Debug.Log("right");
+		if(v.x > 0) Debug.Log("left");
+	
 
 	}
 }
